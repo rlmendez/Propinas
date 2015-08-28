@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Propinas</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="cadena_Cal_prop">Calculadora Propinas</string>
+
+    <string-array name="tipo_cliente">
+        <item>VIP</item>
+        <item>Frecuente</item>
+        <item>Casual</item>
+    </string-array>
+    <string name="title_activity_resultado">resultado</string>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>
