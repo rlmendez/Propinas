@@ -43,6 +43,8 @@ public class propinas extends AppCompatActivity {
 
     public void Calculo(View Propina_Valor){
         Spinner tip_cliente = (Spinner)findViewById(R.id.tipo_cliente);
+        String tipo = tip_cliente.getSelectedItem().toString();
+
         EditText Valor = (EditText)findViewById(R.id.Valor_Compra);
         TextView V_Propina = (TextView)findViewById(R.id.Valor_PropinaP);
 
@@ -51,15 +53,12 @@ public class propinas extends AppCompatActivity {
 
         double VP = 0;
 
-        String tipo = (String) tip_cliente.getSelectedItem();
-
-        //if (tipo=="VIP"){
+        if (tipo=="VIP"){
            VP = num*0.03;
-        //}//if
-        /*
+        }//if
         else{
             if (tipo=="Frecuente"){
-                VP = num*0.8;
+                VP = num*0.08;
             }//if
             else {
             if (tipo=="Casual"){
@@ -67,8 +66,6 @@ public class propinas extends AppCompatActivity {
                                 }//if
                 }//else
             }//else
-
-*/
 
         String cadena = String.valueOf(VP);
 
