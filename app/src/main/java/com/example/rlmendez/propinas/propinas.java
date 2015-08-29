@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class propinas extends AppCompatActivity {
 
@@ -40,10 +41,12 @@ public class propinas extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onClick(View Propina_Valor){
+    public void Calculo(View Propina_Valor){
         Spinner tip_cliente = (Spinner)findViewById(R.id.tipo_cliente);
         EditText Valor = (EditText)findViewById(R.id.Valor_Compra);
+        TextView V_Propina = (TextView)findViewById(R.id.Valor_PropinaP);
 
+        V_Propina.setText("67");
 
     }//void
 

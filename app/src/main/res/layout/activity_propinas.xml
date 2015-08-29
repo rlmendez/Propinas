@@ -85,9 +85,9 @@
         android:nestedScrollingEnabled="false"
         android:enabled="true"
         android:elegantTextHeight="false"
-        android:onClick="onClick"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="Calculo" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/Valor_Compra"
+        android:id="@+id/Valor_PropinaP"
         android:hint="$0"
         android:textColorHint="#ffffff"
         android:layout_marginTop="34dp"
