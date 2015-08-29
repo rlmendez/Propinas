@@ -27,24 +27,24 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Seleccione el tipo de cliente:"
         android:id="@+id/Sel_Tipo"
-        android:layout_below="@+id/cal_propinas"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="29dp"
         android:autoText="true"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_below="@+id/cal_propinas"
+        android:layout_alignStart="@+id/cal_propinas" />
 
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tipo_cliente"
-        android:layout_below="@+id/Sel_Tipo"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="26dp"
         android:spinnerMode="dropdown"
         android:clickable="true"
         android:dropDownSelector="#ffffff"
         android:entries="@array/tipo_cliente"
-        android:focusableInTouchMode="true" />
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/Sel_Tipo"
+        android:layout_alignStart="@+id/tex_Valor_Compra" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -55,7 +55,8 @@
         android:layout_below="@+id/tipo_cliente"
         android:layout_alignParentStart="true"
         android:backgroundTint="#ffffff"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -63,21 +64,20 @@
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/Valor_Compra"
-        android:layout_below="@+id/tex_Valor_Compra"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp"
-        android:text="$0,0"
+        android:hint="$0"
+        android:textColorHint="#ffffff"
         android:clickable="true"
         android:maxHeight="50dp"
         android:numeric="decimal"
-        android:editable="true" />
+        android:editable="true"
+        android:layout_below="@+id/tex_Valor_Compra"
+        android:layout_alignStart="@+id/tex_Valor_Compra" />
 
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="PROPINA"
         android:id="@+id/Propina"
-        android:layout_marginTop="26dp"
         android:longClickable="false"
         android:textStyle="italic"
         android:background="#ffffff"
@@ -86,7 +86,31 @@
         android:enabled="true"
         android:elegantTextHeight="false"
         android:onClick="onClick"
-        android:layout_below="@+id/Valor_Compra"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="EL valor de la propina es:"
+        android:id="@+id/text_propina"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/Propina"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/Valor_Compra"
+        android:hint="$0"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/text_propina"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2b20ff" />
 
 </RelativeLayout>
