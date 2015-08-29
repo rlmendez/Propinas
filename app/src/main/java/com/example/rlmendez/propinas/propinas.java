@@ -46,7 +46,34 @@ public class propinas extends AppCompatActivity {
         EditText Valor = (EditText)findViewById(R.id.Valor_Compra);
         TextView V_Propina = (TextView)findViewById(R.id.Valor_PropinaP);
 
-        V_Propina.setText("67");
+        String val = Valor.getText().toString();
+        int num = Integer.parseInt(val);
+
+        double VP = 0;
+
+        String tipo = (String) tip_cliente.getSelectedItem();
+
+        //if (tipo=="VIP"){
+           VP = num*0.03;
+        //}//if
+        /*
+        else{
+            if (tipo=="Frecuente"){
+                VP = num*0.8;
+            }//if
+            else {
+            if (tipo=="Casual"){
+                VP = num*0.1;
+                                }//if
+                }//else
+            }//else
+
+*/
+
+        String cadena = String.valueOf(VP);
+
+        V_Propina.setText("$ "+cadena+"=");
+
 
     }//void
 
